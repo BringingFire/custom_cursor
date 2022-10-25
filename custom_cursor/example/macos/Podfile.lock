@@ -1,0 +1,22 @@
+PODS:
+  - custom_cursor_macos (0.0.1):
+    - FlutterMacOS
+  - FlutterMacOS (1.0.0)
+
+DEPENDENCIES:
+  - custom_cursor_macos (from `Flutter/ephemeral/.symlinks/plugins/custom_cursor_macos/macos`)
+  - FlutterMacOS (from `Flutter/ephemeral`)
+
+EXTERNAL SOURCES:
+  custom_cursor_macos:
+    :path: Flutter/ephemeral/.symlinks/plugins/custom_cursor_macos/macos
+  FlutterMacOS:
+    :path: Flutter/ephemeral
+
+SPEC CHECKSUMS:
+  custom_cursor_macos: 5bb9b2315f54e638732127634062b355634e37ee
+  FlutterMacOS: ae6af50a8ea7d6103d888583d46bd8328a7e9811
+
+PODFILE CHECKSUM: 6eac6b3292e5142cfc23bdeb71848a40ec51c14c
+
+COCOAPODS: 1.11.3

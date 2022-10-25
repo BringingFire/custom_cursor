@@ -1,0 +1,28 @@
+name: custom_cursor
+repository: https://github.com/BringingFire/custom_cursor
+
+packages:
+  - custom_cursor/pubspec.yaml
+  - custom_cursor/example/pubspec.yaml
+  - custom_cursor_platform_interface/pubspec.yaml
+  - custom_cursor_macos/pubspec.yaml
+
+scripts:
+  postbootstrap: melos run generate
+
+  analyze:
+    exec: dart analyze .
+  generate:
+    exec: flutter pub run build_runner build --delete-conflicting-outputs
+    select-package:
+      depends-on: build_runner
+  test:
+    run: flutter test -r expanded
+    exec:
+      fail-fast: true
+    select-package:
+      dir-exists: test
+
+command:
+  bootstrap:
+   usePubspecOverrides: true

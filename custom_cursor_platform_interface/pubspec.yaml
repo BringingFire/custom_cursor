@@ -1,0 +1,19 @@
+name: custom_cursor_platform_interface
+description: A common platform interface for the custom_cursor plugin.
+homepage: https://github.com/BringingFire/custom_cursor/tree/dev/custom_cursor_platform_interface
+repository: https://github.com/BringingFire/custom_cursor/tree/dev/custom_cursor_platform_interface
+version: 1.0.0
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+  flutter: ">=2.5.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.2
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter

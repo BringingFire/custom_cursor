@@ -1,0 +1,26 @@
+name: custom_cursor_macos
+description: macOS implementation of the custom_cursor plugin.
+homepage: https://github.com/BringingFire/custom_cursor/tree/dev/custom_cursor_macos
+repository: https://github.com/BringingFire/custom_cursor/tree/dev/custom_cursor_macos
+version: 1.0.1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+  flutter: ">=2.5.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  custom_cursor_platform_interface: ^1.0.0
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    implements: custom_cursor
+    platforms:
+      macos:
+        pluginClass: CustomCursorPlugin
+        dartPluginClass: MethodChannelCustomCursor
