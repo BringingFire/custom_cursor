@@ -1,4 +1,5 @@
 import 'package:custom_cursor_platform_interface/custom_cursor_platform_interface.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 export 'package:custom_cursor_platform_interface/custom_cursor_platform_interface.dart'
@@ -14,7 +15,8 @@ class CustomCursor extends MouseCursor {
       _CustomCursorSession(this, device);
 
   @override
-  String get debugDescription => throw UnimplementedError();
+  String get debugDescription =>
+      '${objectRuntimeType(this, 'CustomCursor')}($name)';
 }
 
 class _CustomCursorSession extends MouseCursorSession {
